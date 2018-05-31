@@ -1,0 +1,78 @@
+.chef-cook__heading {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.chef-cook__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-family: 'Alegreya', serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.chef-cook__f-name {
+  padding: 21px;
+  margin-right: 20px;
+  border-top: 1px solid #56534c;
+  border-bottom: 1px solid #56534c;
+}
+
+.chef-cook__l-name {
+  padding: 21px;
+  margin-left: 20px;
+  border-top: 1px solid #56534c;
+  border-bottom: 1px solid #56534c;
+}
+
+.chef-cook__avatar {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
+.chef-cook__quote {
+  position: relative;
+  margin: 0;
+  padding: 0 130px;
+
+  font-family: 'Scriptina', arial;
+  font-size: 24px;
+  line-height: 30px;
+  color: #a47d5e;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 24px;
+    height: 14px;
+
+    background-image: url("../img/quote-top.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 24px;
+    height: 14px;
+
+    background-image: url("../img/quote-bottom.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

@@ -48,12 +48,18 @@
   vertical-align: baseline;
 
   background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
   }
 
   &:active {
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
