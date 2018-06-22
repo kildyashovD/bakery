@@ -10,8 +10,8 @@
   top: 25px;
   right: 0;
 
-  width: 820px;
-  height: 536px;
+  width: 839px;
+  height: 556px;
 
   z-index: 0;
 
@@ -41,7 +41,7 @@
 .prep-info__item {
   box-sizing: border-box;
   max-width: 200px;
-  padding: 34px 51px;
+  padding: 42px 53px 42px 53px;
 
   text-align: center;
   font-family: "Alegreya", serif;
@@ -49,11 +49,28 @@
 
   background-color: rgba(255, 255, 255, 0.7);
 
+  &:first-child {
+    margin-bottom: 1px;
+  }
+
   &--ready-time {
+    padding: 24px 53px 29px 53px;
+
     background-image: url("../img/prep-time-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    .prep-info__name {
+
+    }
+
+    .prep-info__value {
+      font-size: 92px;
+      line-height: 94px;
+    }
+
+    .prep-info__unit
   }
 }
 
@@ -65,11 +82,12 @@
 }
 
 .prep-info__value {
-  font-size: 92px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 64px;
   letter-spacing: 2px;
 }
 
 .prep-info__unit {
+  font-size: 17px;
   text-transform: lowercase;
 }
