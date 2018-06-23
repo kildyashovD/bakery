@@ -20,12 +20,30 @@
 
 .footer-nav__item {
   padding: 23px 35px 21px 35px;
+
+  &:last-child {
+    .footer-nav__link::before {
+      display: none;
+    }
+  }
 }
 
 .footer-nav__link {
+  position: relative;
+
   font-family: "Alegreya", serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
   color: #56534c;
+
+  &::before {
+    content: "~";
+
+    position: absolute;
+    top: -3px;
+    right: -50px;
+    width: 13px;
+    height: 13px;
+  }
 }
