@@ -40,6 +40,7 @@
 }
 
 .special-offer__lead {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -50,6 +51,34 @@
   color: #56534c;
   font-weight: bold;
   letter-spacing: 1px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -129px;
+    left: -21px;
+    width: 380px;
+    height: 75px;
+
+    background-image: url("../img/special-offer--lead-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -108px;
+    left: 151px;
+    width: 40px;
+    height: 33px;
+
+    background-image: url("../img/special-offer--lead-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .special-offer__description {

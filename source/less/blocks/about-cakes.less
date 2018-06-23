@@ -67,8 +67,24 @@
   padding-top: 122px;
 }
 
-.about-cakes__img {
+.about-cakes__img-container {
+  position: relative;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 283px;
+    height: 235px;
+    top: 8px;
+    left: 7px;
+
+    border: 6px solid #ffffff;
+  }
 }
 
 .about-cakes__lead {
@@ -97,4 +113,6 @@
   color: #c9b176;
   letter-spacing: 2px;
   font-weight: 400;
+
+  z-index: 1;
 }
